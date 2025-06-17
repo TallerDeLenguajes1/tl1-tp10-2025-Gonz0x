@@ -7,6 +7,9 @@ foreach (var tarea in tareas)
     Console.WriteLine($"TareaID: {tarea.id} - Descripcion: {tarea.titulo}")
 }
 
+string textoAGuardar = JsonSerializer.Serialize(tareas);
+GuardarArchivoTexto("tareas.json", textoAGuardar);
+
 static async Task<List<Tarea>> GetTareas()
 {    
     var url = "https://jsonplaceholder.typicode.com/todos/";
@@ -28,3 +31,13 @@ catch (HttpRequestException e)
     return null;
 }
 
+
+void GuardarArchivoTexto(string nombreArchivo, string datos)    
+using(var archivo = new FileStream(nombreArchivo, FileMode.Create)){
+    using(var strWriter = new StramWriter(archivo))
+    {
+        strWriter.WriteLine("{0}", datos)
+        strWriter.Close();  
+    }
+}
+//ej codigo tallerhistorico
