@@ -16,7 +16,7 @@ static async Task<List<Tarea>> GetTareas()
         HttpResponseMessage response = await client.GetAsync(url);
         response.EnsureSuccessStatusCode();
         string responseBody = await response.Content.ReadAsStringAsync();
-        List<TAREA> coinDesk = JsonSerializer.Deserialize<List<Tarea>>(responseBody);
+        List<Tarea> coinDesk = JsonSerializer.Deserialize<List<Tarea>>(responseBody);
         return coinDesk;   
     }
 
