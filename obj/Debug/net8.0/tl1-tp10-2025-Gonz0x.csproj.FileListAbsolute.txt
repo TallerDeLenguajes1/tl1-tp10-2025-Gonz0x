@@ -1,0 +1,5 @@
+C:\tl1-tp10-2025-Gonz0x\obj\Debug\net8.0\tl1-tp10-2025-Gonz0x.GeneratedMSBuildEditorConfig.editorconfig
+C:\tl1-tp10-2025-Gonz0x\obj\Debug\net8.0\tl1-tp10-2025-Gonz0x.AssemblyInfoInputs.cache
+C:\tl1-tp10-2025-Gonz0x\obj\Debug\net8.0\tl1-tp10-2025-Gonz0x.AssemblyInfo.cs
+C:\tl1-tp10-2025-Gonz0x\obj\Debug\net8.0\tl1-tp10-2025-Gonz0x.csproj.CoreCompileInputs.cache
+C:\tl1-tp10-2025-Gonz0x\obj\Debug\net8.0\tl1-tp10-2025-Gonz0x.sourcelink.json
